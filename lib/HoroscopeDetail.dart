@@ -14,7 +14,8 @@ class HoroscopeDetailPage extends StatefulWidget {
 class _HoroscopeDetailPageState extends State<HoroscopeDetailPage> {
   Color appBarColor = Colors.transparent;
 
-  late PaletteGenerator _generator;
+  late PaletteGenerator
+      _generator; //When setting the appbar color with the generator, it doesn't get built constantly.(generator ile appbar renkini ayarlarken sürekli build almaması için)
 
   @override
   void initState() {

@@ -13,6 +13,7 @@ class HoroscopeList extends StatelessWidget {
   List<Horoscope> createDataSource() {
     List<Horoscope> carrier = [];
 
+    ///we collect features in a list(özellikleri bir listede topluyoruz)
     for (int i = 0; i < 12; i++) {
       var horoscopeName = Strings.Horoscope_Name[i];
       var horoscopeHistory = Strings.Horoscope_History[i];
